@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@workspace/math": "workspace:*",
+    "@workspace/backend": "workspace:*",
     "@workspace/ui": "workspace:*",
     "convex": "^1.26.2",
     "lucide-react": "^0.475.0",
