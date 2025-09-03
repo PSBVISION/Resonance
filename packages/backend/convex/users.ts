@@ -15,6 +15,10 @@ export const addition = mutation({
     if(identity === null){
       throw new Error("not signed in");
     }
+    const orgId = identity.orgId as String;
+    if(!orgId){
+      throw new Error("Missing Organization ID");
+    }
     return await ctx.db.insert("users",{name: "dadboss"});
   }
 })
