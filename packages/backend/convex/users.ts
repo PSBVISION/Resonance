@@ -15,7 +15,7 @@ export const addition = mutation({
     if(identity === null){
       throw new Error("not signed in");
     }
-    const orgId = identity.orgId as String;
+    const orgId = identity.orgId as string;
     if(!orgId){
       throw new Error("Missing Organization ID");
     }
